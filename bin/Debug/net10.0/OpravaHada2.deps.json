@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "OpravaHada2/1.0.0": {
+        "runtime": {
+          "OpravaHada2.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OpravaHada2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

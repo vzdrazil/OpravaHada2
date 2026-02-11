@@ -69,70 +69,17 @@ namespace OpravaHada
             byte movement = 0;
             List<int> xposlijf = new List<int>();
             List<int> yposlijf = new List<int>();
-            int berryx = randomnummer.Next(0, screenwidth);
-            int berryy = randomnummer.Next(0, screenheight);
+            int berryx = randomnummer.Next(1, screenwidth - 2);
+            int berryy = randomnummer.Next(1, screenheight - 2);
             DateTime tijd = DateTime.Now;
             DateTime tijd2 = DateTime.Now;
             bool buttonpressed = false;
-
-
-
-
+            
             while (true)
             {
-                Console.Clear();
-                if (hoofd.xpos == screenwidth - 1 || hoofd.xpos == 0 || hoofd.ypos == screenheight - 1 || hoofd.ypos == 0)
-                {
-                    gameover = true;
-                }
-                for (int i = 0; i < screenwidth; i++)
-                {
-                    Console.SetCursorPosition(i, 0);
-                    Console.Write("■");
-                }
-                for (int i = 0; i < screenwidth; i++)
-                {
-                    Console.SetCursorPosition(i, screenheight - 1);
-                    Console.Write("■");
-                }
-                for (int i = 0; i < screenheight; i++)
-                {
-                    Console.SetCursorPosition(0, i);
-                    Console.Write("■");
-                }
-                for (int i = 0; i < screenheight; i++)
-                {
-                    Console.SetCursorPosition(screenwidth - 1, i);
-                    Console.Write("■");
-                }
-                Console.ForegroundColor = ConsoleColor.Green;
-                if (berryx == hoofd.xpos && berryy == hoofd.ypos)
-                {
-                    score++;
-                    berryx = randomnummer.Next(1, screenwidth - 2);
-                    berryy = randomnummer.Next(1, screenheight - 2);
-                }
-                for (int i = 0; i < xposlijf.Count(); i++)
-                {
-                    Console.SetCursorPosition(xposlijf[i], yposlijf[i]);
-                    Console.Write("■");
-                    if (xposlijf[i] == hoofd.xpos && yposlijf[i] == hoofd.ypos)
-                    {
-                        gameover = true;
-                    }
-                }
-                if (gameover == true)
-                {
-                    break;
-                }
-                Console.SetCursorPosition(hoofd.xpos, hoofd.ypos);
-                Console.ForegroundColor = hoofd.schermkleur;
-                Console.Write("■");
-                Console.SetCursorPosition(berryx, berryy);
-                Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.Write("■");
-                tijd = DateTime.Now;
-                buttonpressed = false;
+                DrawEnvironment(hoofd, screenwidth, screenheight, gameover);
+                berryx = randomnummer.Next(1, screenwidth - 2);
+                berryy = randomnummer.Next(1, screenheight - 2);
                 while (true)
                 {
                     tijd2 = DateTime.Now;

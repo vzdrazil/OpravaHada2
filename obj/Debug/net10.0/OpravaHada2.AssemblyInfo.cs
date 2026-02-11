@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OpravaHada2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+706d02bda0a2fecf137060a38127f24656660619")]
 [assembly: System.Reflection.AssemblyProductAttribute("OpravaHada2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OpravaHada2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
