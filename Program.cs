@@ -1,158 +1,186 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Threading;
 
-///█ ■
-////https://www.youtube.com/watch?v=SGZgvMwjq2U
-///
-
-/* MOVEMENT: 
-    0 = right
-    1 = left
-    2 = down    
-    3 = up
- 
- 
- 
- 
- 
- */
 namespace OpravaHada
 {
     class Program
     {
+/* MOVEMENT:
+0 = right
+1 = left
+2 = down
+3 = up
+*/
+    static byte Movement(byte currentMovement)
+        {
+            byte movement = currentMovement;
+            DateTime tijd_ = DateTime.Now;
+            bool buttonpressed = false;
 
-        static void DrawEnvironment(Pixel hoofd_, int screenwidth_, int screenheight_, bool gameover_)
+            while (true)
+            {
+                if ((DateTime.Now - tijd_).TotalMilliseconds > 50)
+                    break;
+
+                if (Console.KeyAvailable)
+                {
+                    ConsoleKeyInfo toets = Console.ReadKey(true);
+
+                    if (toets.Key == ConsoleKey.UpArrow && movement != 2 && !buttonpressed)
+                    {
+                        movement = 3;
+                        buttonpressed = true;
+                    }
+                    if (toets.Key == ConsoleKey.DownArrow && movement != 3 && !buttonpressed)
+                    {
+                        movement = 2;
+                        buttonpressed = true;
+                    }
+                    if (toets.Key == ConsoleKey.LeftArrow && movement != 0 && !buttonpressed)
+                    {
+                        movement = 1;
+                        buttonpressed = true;
+                    }
+                    if (toets.Key == ConsoleKey.RightArrow && movement != 1 && !buttonpressed)
+                    {
+                        movement = 0;
+                        buttonpressed = true;
+                    }
+                }
+            }
+
+            return movement;
+        }
+
+        static bool DrawEnvironment(Pixel head, int screenwidth, int screenheight)
         {
             Console.Clear();
-            if (hoofd_.xpos == screenwidth_ - 1 || hoofd_.xpos == 0 || hoofd_.ypos == screenheight_ - 1 || hoofd_.ypos == 0)
+
+            // kolize se zdí
+            if (head.xpos == 0 || head.xpos == screenwidth - 1 ||
+                head.ypos == 0 || head.ypos == screenheight - 1)
             {
-                gameover_ = true;
+                return true;
             }
-            for (int i = 0; i < screenwidth_; i++)
+
+            // rámeček
+            for (int i = 0; i < screenwidth; i++)
             {
                 Console.SetCursorPosition(i, 0);
                 Console.Write("■");
-            }
-            for (int i = 0; i < screenwidth_; i++)
-            {
-                Console.SetCursorPosition(i, screenheight_ - 1);
+                Console.SetCursorPosition(i, screenheight - 1);
                 Console.Write("■");
             }
-            for (int i = 0; i < screenheight_; i++)
+
+            for (int i = 0; i < screenheight; i++)
             {
                 Console.SetCursorPosition(0, i);
                 Console.Write("■");
-            }
-            for (int i = 0; i < screenheight_; i++)
-            {
-                Console.SetCursorPosition(screenwidth_ - 1, i);
+                Console.SetCursorPosition(screenwidth - 1, i);
                 Console.Write("■");
             }
-            Console.ForegroundColor = ConsoleColor.Green;
-        }
 
+            return false;
+        }
 
         static void Main(string[] args)
         {
-            Console.WindowHeight = 16;
-            Console.WindowWidth = 32;
+            Console.CursorVisible = false;
+            Console.WindowHeight = 20;
+            Console.WindowWidth = 40;
+
             int screenwidth = Console.WindowWidth;
             int screenheight = Console.WindowHeight;
-            Random randomnummer = new Random();
+
+            Random random = new Random();
             int score = 5;
             bool gameover = false;
-            Pixel hoofd = new Pixel(screenwidth / 2, screenheight / 2, ConsoleColor.Red);
-            byte movement = 0;
+
+            Pixel head = new Pixel(screenwidth / 2, screenheight / 2, ConsoleColor.Red);
+
             List<int> xposlijf = new List<int>();
             List<int> yposlijf = new List<int>();
-            int berryx = randomnummer.Next(1, screenwidth - 2);
-            int berryy = randomnummer.Next(1, screenheight - 2);
-            DateTime tijd = DateTime.Now;
-            DateTime tijd2 = DateTime.Now;
-            bool buttonpressed = false;
-            
-            while (true)
-            {
-                DrawEnvironment(hoofd, screenwidth, screenheight, gameover);
-                berryx = randomnummer.Next(1, screenwidth - 2);
-                berryy = randomnummer.Next(1, screenheight - 2);
-                while (true)
-                {
-                    tijd2 = DateTime.Now;
-                    if (tijd2.Subtract(tijd).TotalMilliseconds > 500) { break; }
-                    if (Console.KeyAvailable)
-                    {
-                        ConsoleKeyInfo toets = Console.ReadKey(true);
 
-                        if (toets.Key.Equals(ConsoleKey.UpArrow) && movement != 2 && buttonpressed == false)
-                        {
-                            movement = 3;
-                            buttonpressed = true;
-                        }
-                        if (toets.Key.Equals(ConsoleKey.DownArrow) && movement != 3 && buttonpressed == false)
-                        {
-                            movement = 2;
-                            buttonpressed = true;
-                        }
-                        if (toets.Key.Equals(ConsoleKey.LeftArrow) && movement != 0 && buttonpressed == false)
-                        {
-                            movement = 1;
-                            buttonpressed = true;
-                        }
-                        if (toets.Key.Equals(ConsoleKey.RightArrow) && movement != 1 && buttonpressed == false)
-                        {
-                            movement = 0;
-                            buttonpressed = true;
-                        }
-                    }
+            int berryx = random.Next(1, screenwidth - 2);
+            int berryy = random.Next(1, screenheight - 2);
+
+            byte movement = 0;
+
+            while (!gameover)
+            {
+                gameover = DrawEnvironment(head, screenwidth, screenheight);
+
+                // berry snědena
+                if (berryx == head.xpos && berryy == head.ypos)
+                {
+                    score++;
+                    berryx = random.Next(1, screenwidth - 2);
+                    berryy = random.Next(1, screenheight - 2);
                 }
-                xposlijf.Add(hoofd.xpos);
-                yposlijf.Add(hoofd.ypos);
+
+                // tělo
+                for (int i = 0; i < xposlijf.Count; i++)
+                {
+                    Console.SetCursorPosition(xposlijf[i], yposlijf[i]);
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.Write("■");
+
+                    if (xposlijf[i] == head.xpos && yposlijf[i] == head.ypos)
+                        gameover = true;
+                }
+
+                // hlava
+                Console.SetCursorPosition(head.xpos, head.ypos);
+                Console.ForegroundColor = head.schermkleur;
+                Console.Write("■");
+
+                // berry
+                Console.SetCursorPosition(berryx, berryy);
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.Write("■");
+
+                // pohyb
+                movement = Movement(movement);
+
+                xposlijf.Add(head.xpos);
+                yposlijf.Add(head.ypos);
+
                 switch (movement)
                 {
-                    case 3:
-                        hoofd.ypos--;
-                        break;
-                    case 2:
-                        hoofd.ypos++;
-                        break;
-                    case 1:
-                        hoofd.xpos--;
-                        break;
-                    case 0:
-                        hoofd.xpos++;
-                        break;
+                    case 3: head.ypos--; break;
+                    case 2: head.ypos++; break;
+                    case 1: head.xpos--; break;
+                    case 0: head.xpos++; break;
                 }
 
-
-
-                if (xposlijf.Count() > score)
+                if (xposlijf.Count > score)
                 {
                     xposlijf.RemoveAt(0);
                     yposlijf.RemoveAt(0);
                 }
             }
-            Console.SetCursorPosition(screenwidth / 5, screenheight / 2);
-            Console.WriteLine("Game over, Score: " + score);
-            Console.SetCursorPosition(screenwidth / 5, screenheight / 2 + 1);
+
+            Console.Clear();
+            Console.SetCursorPosition(screenwidth / 4, screenheight / 2);
+            Console.WriteLine("Game Over! Score: " + score);
+            Console.ReadKey();
         }
+
         class Pixel
         {
-
             public int xpos { get; set; }
             public int ypos { get; set; }
             public ConsoleColor schermkleur { get; set; }
-            public Pixel(int xpos, int ypos, ConsoleColor schermkleur)
+
+            public Pixel(int x, int y, ConsoleColor color)
             {
-                this.xpos = xpos;
-                this.ypos = ypos;
-                this.schermkleur = schermkleur;
+                xpos = x;
+                ypos = y;
+                schermkleur = color;
             }
         }
     }
+
 }
-//¦
