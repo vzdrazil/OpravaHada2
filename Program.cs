@@ -1,19 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Threading;
 
 namespace OpravaHada
 {
     class Program
     {
-/* MOVEMENT:
-0 = right
-1 = left
-2 = down
-3 = up
-*/
-    static byte Movement(byte currentMovement)
+        /* MOVEMENT:
+        0 = right
+        1 = left
+        2 = down
+        3 = up
+        */
+        static byte Movement(byte currentMovement)
         {
             byte movement = currentMovement;
             DateTime tijd_ = DateTime.Now;
@@ -87,14 +88,19 @@ namespace OpravaHada
 
         static void Main(string[] args)
         {
-            Console.CursorVisible = false;
+            Random random = new Random();
             Console.WindowHeight = 20;
             Console.WindowWidth = 40;
-
             int screenwidth = Console.WindowWidth;
             int screenheight = Console.WindowHeight;
+            Berry berryx = new Berry(screenwidth);
+            Berry berryy = new Berry(screenheight);
+            Console.CursorVisible = false;
+            
 
-            Random random = new Random();
+            
+
+            
             int score = 5;
             bool gameover = false;
 
@@ -103,9 +109,6 @@ namespace OpravaHada
             List<int> xposlijf = new List<int>();
             List<int> yposlijf = new List<int>();
 
-            int berryx = random.Next(1, screenwidth - 2);
-            int berryy = random.Next(1, screenheight - 2);
-
             byte movement = 0;
 
             while (!gameover)
@@ -113,11 +116,11 @@ namespace OpravaHada
                 gameover = DrawEnvironment(head, screenwidth, screenheight);
 
                 // berry snědena
-                if (berryx == head.xpos && berryy == head.ypos)
+                if (berryx.position == head.xpos && berryy.position == head.ypos)
                 {
                     score++;
-                    berryx = random.Next(1, screenwidth - 2);
-                    berryy = random.Next(1, screenheight - 2);
+                    berryx.RandomPositon(screenwidth);
+                    berryy.RandomPositon(screenheight);
                 }
 
                 // tělo
@@ -137,7 +140,7 @@ namespace OpravaHada
                 Console.Write("■");
 
                 // berry
-                Console.SetCursorPosition(berryx, berryy);
+                Console.SetCursorPosition(berryx.position, berryy.position);
                 Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.Write("■");
 
@@ -181,6 +184,23 @@ namespace OpravaHada
                 schermkleur = color;
             }
         }
-    }
+        class Berry
+        {
+            Random random = new Random();
+            public int position { get; set; }
+            public Berry(int screenWidthHeight_)
+            {
+                position = random.Next(1, screenWidthHeight_ - 2);
+            }
+            
+            
+            public void RandomPositon(int screenWidthHeight_)
+            {
+                position = random.Next(1, screenWidthHeight_ - 2);
+               
 
+            }
+        }
+
+    }
 }
