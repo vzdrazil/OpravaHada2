@@ -8,6 +8,36 @@ namespace OpravaHada
 {
     class Program
     {
+        class Pixel
+        {
+            public int xpos { get; set; }
+            public int ypos { get; set; }
+            public ConsoleColor schermkleur { get; set; }
+
+            public Pixel(int x, int y, ConsoleColor color)
+            {
+                xpos = x;
+                ypos = y;
+                schermkleur = color;
+            }
+        }
+        class Berry
+        {
+            Random random = new Random();
+            public int position { get; set; }
+            public Berry(int screenWidthHeight_)
+            {
+                position = random.Next(1, screenWidthHeight_ - 2);
+            }
+
+
+            public void RandomPositon(int screenWidthHeight_)
+            {
+                position = random.Next(1, screenWidthHeight_ - 2);
+
+
+            }
+        }
         /* MOVEMENT:
         0 = right
         1 = left
@@ -63,6 +93,7 @@ namespace OpravaHada
             if (head.xpos == 0 || head.xpos == screenwidth - 1 ||
                 head.ypos == 0 || head.ypos == screenheight - 1)
             {
+                                          
                 return true;
             }
 
@@ -85,7 +116,78 @@ namespace OpravaHada
 
             return false;
         }
+        static int BerryEaten(Pixel head_,Berry berryx_,Berry berryy_,int score_,int screenwidth_,int screenheight_)
+        {
+            if (berryx_.position == head_.xpos && berryy_.position == head_.ypos)
+            {
+                score_++;
+                berryx_.RandomPositon(screenwidth_);
+                berryy_.RandomPositon(screenheight_);
+            }
+            return score_;
+        }
+        static bool Body(List<int> xposlijf_, List<int> yposlijf_,Pixel head_)
+        {
+            bool gameover_=false;
 
+            for (int i = 0; i < xposlijf_.Count; i++)
+            {
+                Console.SetCursorPosition(xposlijf_[i], yposlijf_[i]);
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.Write("■");
+
+                if (xposlijf_[i] == head_.xpos && yposlijf_[i] == head_.ypos)
+                {
+                    gameover_ = true;
+                }
+                    
+            }
+            return gameover_;
+        }
+        static void Head(Pixel head_)
+        {
+            Console.SetCursorPosition(head_.xpos, head_.ypos);
+            Console.ForegroundColor = head_.schermkleur;
+            Console.Write("■");
+        }
+        static void BerryInit(Berry berryx_, Berry berryy_)
+        {
+            Console.SetCursorPosition(berryx_.position, berryy_.position);
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.Write("■");
+
+        }
+        static void AddHead(List<int> xposlijf_, List<int> yposlijf_, Pixel head_)
+        {
+            xposlijf_.Add(head_.xpos);
+            yposlijf_.Add(head_.ypos);
+        }
+        static void NextMove(byte movement_, Pixel head_)
+        {
+            switch (movement_)
+            {               
+                case 3: head_.ypos--; break;
+                case 2: head_.ypos++; break;
+                case 1: head_.xpos--; break;
+                case 0: head_.xpos++; break;
+            }
+        }
+        static void RemoveLastPoint(List<int> xposlijf_, List<int> yposlijf_,int score)
+        {
+            if (xposlijf_.Count > score)
+            {
+                xposlijf_.RemoveAt(0);
+                yposlijf_.RemoveAt(0);
+            }
+
+        }
+        static void GameoverScreen(int screenwidth_, int screenheight_, int score_)
+        {
+            Console.Clear();
+            Console.SetCursorPosition(screenwidth_ / 4, screenheight_ / 2);
+            Console.WriteLine("Game Over! Score: " + score_);
+            Console.ReadKey();
+        }
         static void Main(string[] args)
         {
             Random random = new Random();
@@ -96,111 +198,48 @@ namespace OpravaHada
             Berry berryx = new Berry(screenwidth);
             Berry berryy = new Berry(screenheight);
             Console.CursorVisible = false;
-            
-
-            
-
-            
             int score = 5;
             bool gameover = false;
+            byte movement = 0;
 
             Pixel head = new Pixel(screenwidth / 2, screenheight / 2, ConsoleColor.Red);
 
             List<int> xposlijf = new List<int>();
             List<int> yposlijf = new List<int>();
-
-            byte movement = 0;
-
+         
             while (!gameover)
             {
                 gameover = DrawEnvironment(head, screenwidth, screenheight);
-
+                if (gameover)
+                {
+                    break;
+                }
                 // berry snědena
-                if (berryx.position == head.xpos && berryy.position == head.ypos)
-                {
-                    score++;
-                    berryx.RandomPositon(screenwidth);
-                    berryy.RandomPositon(screenheight);
-                }
-
+                score = BerryEaten(head, berryx, berryy, score, screenwidth, screenheight);
                 // tělo
-                for (int i = 0; i < xposlijf.Count; i++)
+                gameover = Body(xposlijf, yposlijf, head);
+                if (gameover)
                 {
-                    Console.SetCursorPosition(xposlijf[i], yposlijf[i]);
-                    Console.ForegroundColor = ConsoleColor.Green;
-                    Console.Write("■");
-
-                    if (xposlijf[i] == head.xpos && yposlijf[i] == head.ypos)
-                        gameover = true;
+                    break;
                 }
-
                 // hlava
-                Console.SetCursorPosition(head.xpos, head.ypos);
-                Console.ForegroundColor = head.schermkleur;
-                Console.Write("■");
-
+                Head(head);
                 // berry
-                Console.SetCursorPosition(berryx.position, berryy.position);
-                Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.Write("■");
-
+                BerryInit(berryx, berryy);
                 // pohyb
                 movement = Movement(movement);
 
-                xposlijf.Add(head.xpos);
-                yposlijf.Add(head.ypos);
+                AddHead(xposlijf, yposlijf, head);
 
-                switch (movement)
-                {
-                    case 3: head.ypos--; break;
-                    case 2: head.ypos++; break;
-                    case 1: head.xpos--; break;
-                    case 0: head.xpos++; break;
-                }
+                NextMove(movement, head);
 
-                if (xposlijf.Count > score)
-                {
-                    xposlijf.RemoveAt(0);
-                    yposlijf.RemoveAt(0);
-                }
+                RemoveLastPoint(xposlijf, yposlijf, score);
             }
 
-            Console.Clear();
-            Console.SetCursorPosition(screenwidth / 4, screenheight / 2);
-            Console.WriteLine("Game Over! Score: " + score);
-            Console.ReadKey();
+            GameoverScreen(screenwidth, screenheight, score);
         }
 
-        class Pixel
-        {
-            public int xpos { get; set; }
-            public int ypos { get; set; }
-            public ConsoleColor schermkleur { get; set; }
-
-            public Pixel(int x, int y, ConsoleColor color)
-            {
-                xpos = x;
-                ypos = y;
-                schermkleur = color;
-            }
-        }
-        class Berry
-        {
-            Random random = new Random();
-            public int position { get; set; }
-            public Berry(int screenWidthHeight_)
-            {
-                position = random.Next(1, screenWidthHeight_ - 2);
-            }
-            
-            
-            public void RandomPositon(int screenWidthHeight_)
-            {
-                position = random.Next(1, screenWidthHeight_ - 2);
-               
-
-            }
-        }
+        
 
     }
 }

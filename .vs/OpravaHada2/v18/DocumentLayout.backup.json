@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\vitek\\source\\repos\\OpravaHada2\\OpravaHada2\\",
+  "WorkspaceRootPath": "C:\\Users\\v_zdrazil\\source\\repos\\VycistiHada\\OpravaHada2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6AEE861C-28C6-E785-FC2A-99B676EBE55C}|OpravaHada2.csproj|c:\\users\\vitek\\source\\repos\\opravahada2\\opravahada2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6AEE861C-28C6-E785-FC2A-99B676EBE55C}|OpravaHada2.csproj|c:\\users\\v_zdrazil\\source\\repos\\vycistihada\\opravahada2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6AEE861C-28C6-E785-FC2A-99B676EBE55C}|OpravaHada2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -23,11 +23,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\vitek\\source\\repos\\OpravaHada2\\OpravaHada2\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\v_zdrazil\\source\\repos\\VycistiHada\\OpravaHada2\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\vitek\\source\\repos\\OpravaHada2\\OpravaHada2\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAApwFsAAAAMAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\v_zdrazil\\source\\repos\\VycistiHada\\OpravaHada2\\Program.cs*",
+              "RelativeToolTip": "Program.cs*",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAkwNAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-12T10:53:44.192Z",
               "EditorCaption": ""
