@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Threading;
+using OpravaHada2.Enums;
+using OpravaHada2.Functions;
 
 namespace OpravaHada
 {
@@ -200,7 +202,7 @@ namespace OpravaHada
             Console.CursorVisible = false;
             int score = 5;
             bool gameover = false;
-            byte movement = 0;
+            MovementDirect movement;
 
             Pixel head = new Pixel(screenwidth / 2, screenheight / 2, ConsoleColor.Red);
 
@@ -227,7 +229,7 @@ namespace OpravaHada
                 // berry
                 BerryInit(berryx, berryy);
                 // pohyb
-                movement = Movement(movement);
+                movement = Movements.Movement(movement);
 
                 AddHead(xposlijf, yposlijf, head);
 
