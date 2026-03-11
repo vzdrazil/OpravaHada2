@@ -1,45 +1,45 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\v_zdrazil\\source\\repos\\OpravaHada2\\OpravaHada2\\OpravaHada2\\",
+  "WorkspaceRootPath": "C:\\Users\\vitek\\source\\repos\\OpravaHada2\\OpravaHada2\\OpravaHada2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6AEE861C-28C6-E785-FC2A-99B676EBE55C}|OpravaHada2.csproj|c:\\users\\v_zdrazil\\source\\repos\\opravahada2\\opravahada2\\opravahada2\\functions\\movements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AEE861C-28C6-E785-FC2A-99B676EBE55C}|OpravaHada2.csproj|solutionrelative:functions\\movements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6AEE861C-28C6-E785-FC2A-99B676EBE55C}|OpravaHada2.csproj|c:\\users\\vitek\\source\\repos\\opravahada2\\opravahada2\\opravahada2\\enums\\movementdirect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AEE861C-28C6-E785-FC2A-99B676EBE55C}|OpravaHada2.csproj|solutionrelative:enums\\movementdirect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6AEE861C-28C6-E785-FC2A-99B676EBE55C}|OpravaHada2.csproj|c:\\users\\v_zdrazil\\source\\repos\\opravahada2\\opravahada2\\opravahada2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AEE861C-28C6-E785-FC2A-99B676EBE55C}|OpravaHada2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AEE861C-28C6-E785-FC2A-99B676EBE55C}|OpravaHada2.csproj|c:\\users\\v_zdrazil\\source\\repos\\opravahada2\\opravahada2\\opravahada2\\objectclasses\\berry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AEE861C-28C6-E785-FC2A-99B676EBE55C}|OpravaHada2.csproj|solutionrelative:objectclasses\\berry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AEE861C-28C6-E785-FC2A-99B676EBE55C}|OpravaHada2.csproj|c:\\users\\v_zdrazil\\source\\repos\\opravahada2\\opravahada2\\opravahada2\\objectclasses\\pixel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AEE861C-28C6-E785-FC2A-99B676EBE55C}|OpravaHada2.csproj|solutionrelative:objectclasses\\pixel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AEE861C-28C6-E785-FC2A-99B676EBE55C}|OpravaHada2.csproj|c:\\users\\v_zdrazil\\source\\repos\\opravahada2\\opravahada2\\opravahada2\\functions\\draw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6AEE861C-28C6-E785-FC2A-99B676EBE55C}|OpravaHada2.csproj|c:\\users\\vitek\\source\\repos\\opravahada2\\opravahada2\\opravahada2\\functions\\draw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6AEE861C-28C6-E785-FC2A-99B676EBE55C}|OpravaHada2.csproj|solutionrelative:functions\\draw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6AEE861C-28C6-E785-FC2A-99B676EBE55C}|OpravaHada2.csproj|c:\\users\\v_zdrazil\\source\\repos\\opravahada2\\opravahada2\\opravahada2\\functions\\snakebody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6AEE861C-28C6-E785-FC2A-99B676EBE55C}|OpravaHada2.csproj|c:\\users\\vitek\\source\\repos\\opravahada2\\opravahada2\\opravahada2\\functions\\movements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AEE861C-28C6-E785-FC2A-99B676EBE55C}|OpravaHada2.csproj|solutionrelative:functions\\movements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AEE861C-28C6-E785-FC2A-99B676EBE55C}|OpravaHada2.csproj|c:\\users\\vitek\\source\\repos\\opravahada2\\opravahada2\\opravahada2\\functions\\snakebody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6AEE861C-28C6-E785-FC2A-99B676EBE55C}|OpravaHada2.csproj|solutionrelative:functions\\snakebody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6AEE861C-28C6-E785-FC2A-99B676EBE55C}|OpravaHada2.csproj|c:\\users\\v_zdrazil\\source\\repos\\opravahada2\\opravahada2\\opravahada2\\enums\\movementdirecte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AEE861C-28C6-E785-FC2A-99B676EBE55C}|OpravaHada2.csproj|solutionrelative:enums\\movementdirecte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6AEE861C-28C6-E785-FC2A-99B676EBE55C}|OpravaHada2.csproj|c:\\users\\vitek\\source\\repos\\opravahada2\\opravahada2\\opravahada2\\objectclasses\\berry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AEE861C-28C6-E785-FC2A-99B676EBE55C}|OpravaHada2.csproj|solutionrelative:objectclasses\\berry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6AEE861C-28C6-E785-FC2A-99B676EBE55C}|OpravaHada2.csproj|c:\\users\\v_zdrazil\\source\\repos\\opravahada2\\opravahada2\\opravahada2\\functions\\berrys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AEE861C-28C6-E785-FC2A-99B676EBE55C}|OpravaHada2.csproj|solutionrelative:functions\\berrys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AEE861C-28C6-E785-FC2A-99B676EBE55C}|OpravaHada2.csproj|c:\\users\\v_zdrazil\\source\\repos\\opravahada2\\opravahada2\\opravahada2\\opravahada2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{6AEE861C-28C6-E785-FC2A-99B676EBE55C}|OpravaHada2.csproj|solutionrelative:opravahada2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{6AEE861C-28C6-E785-FC2A-99B676EBE55C}|OpravaHada2.csproj|c:\\users\\vitek\\source\\repos\\opravahada2\\opravahada2\\opravahada2\\objectclasses\\pixel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AEE861C-28C6-E785-FC2A-99B676EBE55C}|OpravaHada2.csproj|solutionrelative:objectclasses\\pixel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.311\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AEE861C-28C6-E785-FC2A-99B676EBE55C}|OpravaHada2.csproj|c:\\users\\vitek\\source\\repos\\opravahada2\\opravahada2\\opravahada2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AEE861C-28C6-E785-FC2A-99B676EBE55C}|OpravaHada2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AEE861C-28C6-E785-FC2A-99B676EBE55C}|OpravaHada2.csproj|c:\\users\\vitek\\source\\repos\\opravahada2\\opravahada2\\opravahada2\\opravahada2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6AEE861C-28C6-E785-FC2A-99B676EBE55C}|OpravaHada2.csproj|solutionrelative:opravahada2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AEE861C-28C6-E785-FC2A-99B676EBE55C}|OpravaHada2.csproj|c:\\users\\vitek\\source\\repos\\opravahada2\\opravahada2\\opravahada2\\functions\\berrys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AEE861C-28C6-E785-FC2A-99B676EBE55C}|OpravaHada2.csproj|solutionrelative:functions\\berrys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -49,129 +49,134 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Berrys.cs",
-              "DocumentMoniker": "C:\\Users\\v_zdrazil\\source\\repos\\OpravaHada2\\OpravaHada2\\OpravaHada2\\Functions\\Berrys.cs",
-              "RelativeDocumentMoniker": "Functions\\Berrys.cs",
-              "ToolTip": "C:\\Users\\v_zdrazil\\source\\repos\\OpravaHada2\\OpravaHada2\\OpravaHada2\\Functions\\Berrys.cs",
-              "RelativeToolTip": "Functions\\Berrys.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-25T09:05:14.229Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "SnakeBody.cs",
-              "DocumentMoniker": "C:\\Users\\v_zdrazil\\source\\repos\\OpravaHada2\\OpravaHada2\\OpravaHada2\\Functions\\SnakeBody.cs",
-              "RelativeDocumentMoniker": "Functions\\SnakeBody.cs",
-              "ToolTip": "C:\\Users\\v_zdrazil\\source\\repos\\OpravaHada2\\OpravaHada2\\OpravaHada2\\Functions\\SnakeBody.cs",
-              "RelativeToolTip": "Functions\\SnakeBody.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACsAAAAmAAAAAAAAAA==",
+              "Title": "Pixel.cs",
+              "DocumentMoniker": "C:\\Users\\vitek\\source\\repos\\OpravaHada2\\OpravaHada2\\OpravaHada2\\ObjectClasses\\Pixel.cs",
+              "RelativeDocumentMoniker": "ObjectClasses\\Pixel.cs",
+              "ToolTip": "C:\\Users\\vitek\\source\\repos\\OpravaHada2\\OpravaHada2\\OpravaHada2\\ObjectClasses\\Pixel.cs",
+              "RelativeToolTip": "ObjectClasses\\Pixel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-25T09:00:55.281Z"
+              "WhenOpened": "2026-02-25T08:12:22.489Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Draw.cs",
-              "DocumentMoniker": "C:\\Users\\v_zdrazil\\source\\repos\\OpravaHada2\\OpravaHada2\\OpravaHada2\\Functions\\Draw.cs",
+              "DocumentMoniker": "C:\\Users\\vitek\\source\\repos\\OpravaHada2\\OpravaHada2\\OpravaHada2\\Functions\\Draw.cs",
               "RelativeDocumentMoniker": "Functions\\Draw.cs",
-              "ToolTip": "C:\\Users\\v_zdrazil\\source\\repos\\OpravaHada2\\OpravaHada2\\OpravaHada2\\Functions\\Draw.cs",
+              "ToolTip": "C:\\Users\\vitek\\source\\repos\\OpravaHada2\\OpravaHada2\\OpravaHada2\\Functions\\Draw.cs",
               "RelativeToolTip": "Functions\\Draw.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAkAAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-25T08:53:19.765Z"
+              "WhenOpened": "2026-02-25T08:53:19.765Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "SnakeBody.cs",
+              "DocumentMoniker": "C:\\Users\\vitek\\source\\repos\\OpravaHada2\\OpravaHada2\\OpravaHada2\\Functions\\SnakeBody.cs",
+              "RelativeDocumentMoniker": "Functions\\SnakeBody.cs",
+              "ToolTip": "C:\\Users\\vitek\\source\\repos\\OpravaHada2\\OpravaHada2\\OpravaHada2\\Functions\\SnakeBody.cs",
+              "RelativeToolTip": "Functions\\SnakeBody.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T09:00:55.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Movements.cs",
-              "DocumentMoniker": "C:\\Users\\v_zdrazil\\source\\repos\\OpravaHada2\\OpravaHada2\\OpravaHada2\\Functions\\Movements.cs",
+              "DocumentMoniker": "C:\\Users\\vitek\\source\\repos\\OpravaHada2\\OpravaHada2\\OpravaHada2\\Functions\\Movements.cs",
               "RelativeDocumentMoniker": "Functions\\Movements.cs",
-              "ToolTip": "C:\\Users\\v_zdrazil\\source\\repos\\OpravaHada2\\OpravaHada2\\OpravaHada2\\Functions\\Movements.cs",
+              "ToolTip": "C:\\Users\\vitek\\source\\repos\\OpravaHada2\\OpravaHada2\\OpravaHada2\\Functions\\Movements.cs",
               "RelativeToolTip": "Functions\\Movements.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAYwDMAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-25T08:45:32.913Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MovementDirectE.cs",
-              "DocumentMoniker": "C:\\Users\\v_zdrazil\\source\\repos\\OpravaHada2\\OpravaHada2\\OpravaHada2\\Enums\\MovementDirectE.cs",
-              "RelativeDocumentMoniker": "Enums\\MovementDirectE.cs",
-              "ToolTip": "C:\\Users\\v_zdrazil\\source\\repos\\OpravaHada2\\OpravaHada2\\OpravaHada2\\Enums\\MovementDirectE.cs",
-              "RelativeToolTip": "Enums\\MovementDirectE.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "MovementDirect.cs",
+              "DocumentMoniker": "C:\\Users\\vitek\\source\\repos\\OpravaHada2\\OpravaHada2\\OpravaHada2\\Enums\\MovementDirect.cs",
+              "RelativeDocumentMoniker": "Enums\\MovementDirect.cs",
+              "ToolTip": "C:\\Users\\vitek\\source\\repos\\OpravaHada2\\OpravaHada2\\OpravaHada2\\Enums\\MovementDirect.cs",
+              "RelativeToolTip": "Enums\\MovementDirect.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-25T08:39:05.824Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Berry.cs",
-              "DocumentMoniker": "C:\\Users\\v_zdrazil\\source\\repos\\OpravaHada2\\OpravaHada2\\OpravaHada2\\ObjectClasses\\Berry.cs",
-              "RelativeDocumentMoniker": "ObjectClasses\\Berry.cs",
-              "ToolTip": "C:\\Users\\v_zdrazil\\source\\repos\\OpravaHada2\\OpravaHada2\\OpravaHada2\\ObjectClasses\\Berry.cs",
-              "RelativeToolTip": "ObjectClasses\\Berry.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-25T08:18:33.903Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Pixel.cs",
-              "DocumentMoniker": "C:\\Users\\v_zdrazil\\source\\repos\\OpravaHada2\\OpravaHada2\\OpravaHada2\\ObjectClasses\\Pixel.cs",
-              "RelativeDocumentMoniker": "ObjectClasses\\Pixel.cs",
-              "ToolTip": "C:\\Users\\v_zdrazil\\source\\repos\\OpravaHada2\\OpravaHada2\\OpravaHada2\\ObjectClasses\\Pixel.cs",
-              "RelativeToolTip": "ObjectClasses\\Pixel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-25T08:12:22.489Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\v_zdrazil\\source\\repos\\OpravaHada2\\OpravaHada2\\OpravaHada2\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\v_zdrazil\\source\\repos\\OpravaHada2\\OpravaHada2\\OpravaHada2\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-12T10:53:44.192Z",
+              "WhenOpened": "2026-02-25T08:39:05.824Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "OpravaHada2.csproj",
-              "DocumentMoniker": "C:\\Users\\v_zdrazil\\source\\repos\\OpravaHada2\\OpravaHada2\\OpravaHada2\\OpravaHada2.csproj",
-              "RelativeDocumentMoniker": "OpravaHada2.csproj",
-              "ToolTip": "C:\\Users\\v_zdrazil\\source\\repos\\OpravaHada2\\OpravaHada2\\OpravaHada2\\OpravaHada2.csproj",
-              "RelativeToolTip": "OpravaHada2.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-02-25T08:12:36.22Z"
+              "DocumentIndex": 4,
+              "Title": "Berry.cs",
+              "DocumentMoniker": "C:\\Users\\vitek\\source\\repos\\OpravaHada2\\OpravaHada2\\OpravaHada2\\ObjectClasses\\Berry.cs",
+              "RelativeDocumentMoniker": "ObjectClasses\\Berry.cs",
+              "ToolTip": "C:\\Users\\vitek\\source\\repos\\OpravaHada2\\OpravaHada2\\OpravaHada2\\ObjectClasses\\Berry.cs",
+              "RelativeToolTip": "ObjectClasses\\Berry.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T08:18:33.903Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\vitek\\source\\repos\\OpravaHada2\\OpravaHada2\\OpravaHada2\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\vitek\\source\\repos\\OpravaHada2\\OpravaHada2\\OpravaHada2\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAQwBUAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T10:53:44.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Microsoft.NET.TargetFrameworkInference.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.311\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets",
               "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets",
               "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.311\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets",
-              "ViewState": "AgIAAJYAAAAAAAAAAAAAwJYAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
               "WhenOpened": "2026-02-12T10:53:44.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Berrys.cs",
+              "DocumentMoniker": "C:\\Users\\vitek\\source\\repos\\OpravaHada2\\OpravaHada2\\OpravaHada2\\Functions\\Berrys.cs",
+              "RelativeDocumentMoniker": "Functions\\Berrys.cs",
+              "ToolTip": "C:\\Users\\vitek\\source\\repos\\OpravaHada2\\OpravaHada2\\OpravaHada2\\Functions\\Berrys.cs",
+              "RelativeToolTip": "Functions\\Berrys.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T09:05:14.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OpravaHada2.csproj",
+              "DocumentMoniker": "C:\\Users\\vitek\\source\\repos\\OpravaHada2\\OpravaHada2\\OpravaHada2\\OpravaHada2.csproj",
+              "RelativeDocumentMoniker": "OpravaHada2.csproj",
+              "ToolTip": "C:\\Users\\vitek\\source\\repos\\OpravaHada2\\OpravaHada2\\OpravaHada2\\OpravaHada2.csproj",
+              "RelativeToolTip": "OpravaHada2.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-25T08:12:36.22Z"
             }
           ]
         }
