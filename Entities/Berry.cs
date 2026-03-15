@@ -30,9 +30,9 @@ namespace OpravaHada2.Entities
             Position = new Pixel(x, y, ConsoleColor.Cyan);
         }
 
-        public void Draw()
+        public void DrawBerry()
         {
-            Position.Draw();
+            Position.DrawPixel();
         }
     }
 }

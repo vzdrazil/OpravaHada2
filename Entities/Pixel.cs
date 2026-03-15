@@ -17,7 +17,7 @@ namespace OpravaHada2.Entities
             Color = color;
         }
 
-        public void Draw()
+        public void DrawPixel()
         {
             Console.ForegroundColor = Color;
             Console.SetCursorPosition(X, Y);

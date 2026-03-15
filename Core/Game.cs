@@ -24,7 +24,7 @@ namespace OpravaHada2.Core
             {
                 HandleInput();
                 Update();
-                Draw();
+                DrawEnvironment();
 
                 Thread.Sleep(120);
             }
@@ -34,13 +34,21 @@ namespace OpravaHada2.Core
 
         private void Initialize()
         {
+            InitializeConsole();
+            InitializeObjects();
+        }
+        private void InitializeConsole()
+        {
             Console.CursorVisible = false;
             Console.WindowWidth = width;
             Console.WindowHeight = height;
-
-            snake = new Snake();
-            berry = new Berry(width, height,snake);
         }
+        private void InitializeObjects()
+        {
+            snake = new Snake();
+            berry = new Berry(width, height, snake);
+        }
+
 
         private void HandleInput()
         {
@@ -74,31 +82,44 @@ namespace OpravaHada2.Core
 
         private void Update()
         {
-            bool grow = false;
-
-            int nextX = snake.Head.X;
-            int nextY = snake.Head.Y;
-
-            switch (snake.Direction)
-            {
-                case Direction.Up: nextY--; break;
-                case Direction.Down: nextY++; break;
-                case Direction.Left: nextX--; break;
-                case Direction.Right: nextX++; break;
-            }
-
-            if (nextX == berry.Position.X && nextY == berry.Position.Y)
-            {
-                grow = true;
-                score++;
-                berry.Respawn(width, height, snake.Body);
-            }
+            var nextPos = GetNextHeadPosition();
+            bool grow = CheckBerryCollision(nextPos);
 
             snake.Move(grow);
 
             CheckWallCollision();
             CheckSelfCollision();
         }
+
+        
+        private (int X, int Y) GetNextHeadPosition()
+        {
+            int x = snake.Head.X;
+            int y = snake.Head.Y;
+
+            switch (snake.Direction)
+            {
+                case Direction.Up: y--; break;
+                case Direction.Down: y++; break;
+                case Direction.Left: x--; break;
+                case Direction.Right: x++; break;
+            }
+
+            return (x, y);
+        }
+
+       
+        private bool CheckBerryCollision((int X, int Y) nextPos)
+        {
+            if (nextPos.X == berry.Position.X && nextPos.Y == berry.Position.Y)
+            {
+                score++;
+                berry.Respawn(width, height, snake.Body);
+                return true;
+            }
+            return false;
+        }
+
 
         private void CheckWallCollision()
         {
@@ -119,14 +140,14 @@ namespace OpravaHada2.Core
             }
         }
 
-        private void Draw()
+        private void DrawEnvironment()
         {
             Console.Clear();
 
             DrawWalls();
 
-            berry.Draw();
-            snake.Draw();
+            berry.DrawBerry();
+            snake.DrawSnake();
 
             Console.SetCursorPosition(2, 0);
             Console.Write("Score: " + score);
